@@ -1,0 +1,109 @@
+[user]
+    # Do not guess my name or email.
+	useConfigOnly = true
+
+# If this is a Tor Project repo, use the appropriate include file.
+[includeIf "hasconfig:remote.*.url:git@gitlab.torproject.org:*/**"]
+	path = ~/.config/includes/git/gitlab.torproject.org.inc
+
+# If this is a GitHub repo, use the appropriate include file.
+[includeIf "hasconfig:remote.*.url:git@hashcatHitman.github.com:*/**"]
+	path = ~/.config/includes/git/hashcatHitman.github.com.inc
+
+# If this is a dummy repo (localhost), use the GitHub include file.
+[includeIf "hasconfig:remote.*.url:localhost"]
+	path = ~/.config/includes/git/hashcatHitman.github.com.inc
+
+[alias]
+	aliases = config --get-regexp alias
+    # Makes life easier for rebase-centered workflows.
+	rb = rebase --autostash
+	pf = push --force-with-lease --force-if-includes
+
+[branch]
+    # Setup rebase instead of merge for new branches on pull.
+	autoSetupRebase = always
+
+[commit]
+    # Strip leading and trailing empty lines, trailing whitespace, commentary
+    # and collapse consecutive empty lines.
+	cleanup = strip
+
+    # Sign commits. I use an SSH key instead of GPG.
+	gpgSign = true
+
+[core]
+    # Always use lf. I have always hated crlf.
+	eol = lf
+
+    # Reject irreversible EOL conversions.
+	safecrlf = true
+
+    # I do not want crlf.
+	autocrlf = false
+
+    # Helix editor. https://helix-editor.com/
+	editor = hx
+
+    # This is true by default.
+	logAllRefUpdates = true
+
+    # Paths to ignore are kept in the global gitignore.
+	excludesfile = ~/.gitignore
+
+[tag]
+    # Sign tags.
+	forceSignAnnotated = true
+	gpgSign = true
+
+[gpg]
+    # Sign with an SSH key.
+	format = ssh
+
+[gpg.ssh]
+	# Recognized signatures.
+	allowedSignersFile = ~/.ssh/allowed_signers
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[init]
+	defaultBranch = main
+    # I want to use `sha256`, but GitHub doesn't support it yet.
+	defaultObjectFormat = sha1
+
+[log]
+    # I want to see signatures on commits.
+	showSignature = true
+
+[merge]
+    # I hate merge commits. Linear history is much nicer IMO.
+	ff = only
+
+[protocol]
+    # Only use SSH to connect.
+ 	allow = never
+
+[protocol.ssh]
+    # Only use SSH to connect.
+	allow = always
+
+[pull]
+    # I hate merge commits. Linear history is much nicer IMO.
+	ff = only
+	rebase = true
+
+[push]
+    # I want to set this to `true`, but GitHub doesn't support it yet.
+	gpgSign = if-asked
+
+# Replace HTTPS repository links with their SSH counterparts.
+[url "ssh://git@gitlab.torproject.org/"]
+insteadOf = https://gitlab.torproject.org/
+
+# Replace HTTPS repository links with their SSH counterparts.
+[url "ssh://git@hashcatHitman.github.com/"]
+insteadOf = https://github.com/
