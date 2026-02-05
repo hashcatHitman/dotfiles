@@ -1,0 +1,48 @@
+# Halloy config.
+#
+# For a complete list of available options,
+# please visit https://halloy.squidowl.org/configuration/index.html
+
+# [servers.oftc]
+# nickname = "hashcatHitman"
+# nick_password_file = "~/.config/halloy/.servers.oftc.password"
+# nick_identify_syntax = "password-nick"
+# server = "irc.oftc.net"
+# channels = ["#tor", "#tor-project", "#tor-dev", "#tor-onions"]
+
+# [servers.libera]
+# nickname = "hashcatHitman"
+# nick_password_file = "~/.config/halloy/.servers.libera.password"
+# nick_identify_syntax = "password-nick"
+# server = "irc.libera.chat"
+# channels = ["##bnc4free"]
+# [servers.libera.sasl.plain]
+# username = "hashcatHitman"
+# password_file = "~/.config/halloy/.servers.libera.password"
+
+# [servers.ircnow]
+# nickname = "hashcatHitman/ircnow"
+# server = "bnc.thunderirc.net"
+# password_file = "~/.config/halloy/.thunderirc.bouncer.password"
+# port = 31337
+
+# [servers.ircnow]
+# nickname = "hashcatHitman_"
+# nick_password_file = "~/.config/halloy/.servers.ircnow.password"
+# nick_identify_syntax = "nick-password"
+# channels = ["#help", "#thunderirc"] 
+# server = "irc.ircnow.org"
+
+[servers.oftc]
+nickname = "hashcatHitman/oftc"
+server = "bnc.thunderirc.net"
+password_file = "~/.config/halloy/.thunderirc.bouncer.password"
+port = 31337
+
+
+[buffer.timestamp]
+format = "%r"
+
+[font]
+size = 13
+weight = "normal"
