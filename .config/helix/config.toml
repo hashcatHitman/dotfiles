@@ -1,0 +1,19 @@
+theme = "ayu_dark"
+
+[editor]
+mouse=true
+continue-comments=true
+rulers=[81]
+bufferline="multiple"
+default-line-ending="lf"
+idle-timeout=0
+completion-timeout=0
+popup-border="all"
+
+[editor.lsp]
+display-progress-messages=true
+display-inlay-hints=true
+
+[editor.file-picker]
+hidden = false
+

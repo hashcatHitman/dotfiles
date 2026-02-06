@@ -1,0 +1,4 @@
+[[language]]
+name = "rust"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "rustfmt" }
