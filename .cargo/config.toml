@@ -1,0 +1,28 @@
+[build]
+# Uncomment if working on nightly toolchain
+# rustflags = ["-Ctarget-cpu=native", "-Clink-arg=-fuse-ld=mold", "-Zthreads=32"]
+
+[net]
+git-fetch-with-cli = true
+
+[profile.release]
+codegen-units = 1
+strip = true
+opt-level = 3
+debug = false
+lto = true
+incremental = false
+
+[profile.release.package."*"]
+codegen-units = 1
+strip = true
+opt-level = 3
+debug = false
+incremental = false
+
+[profile.release.build-override]
+codegen-units = 1
+strip = true
+opt-level = 3
+debug = false
+incremental = false
