@@ -1,0 +1,11 @@
+[username]
+format = "[$user]($style)@"
+show_always = true
+
+[hostname]
+format = "[$ssh_symbol$hostname]($style) in "
+ssh_only = false
+trim_at = ""
+
+[sudo]
+disabled = false
