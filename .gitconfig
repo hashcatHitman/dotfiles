@@ -4,15 +4,15 @@
 
 # If this is a Tor Project repo, use the appropriate include file.
 [includeIf "hasconfig:remote.*.url:git@gitlab.torproject.org:*/**"]
-	path = ~/.config/includes/git/gitlab.torproject.org.inc
+	path = ~/.config/includes/git/gitlab.torproject.org.gitconfig
 
 # If this is a GitHub repo, use the appropriate include file.
 [includeIf "hasconfig:remote.*.url:git@hashcatHitman.github.com:*/**"]
-	path = ~/.config/includes/git/hashcatHitman.github.com.inc
+	path = ~/.config/includes/git/hashcatHitman.github.com.gitconfig
 
 # If this is a dummy repo (localhost), use the GitHub include file.
 [includeIf "hasconfig:remote.*.url:localhost"]
-	path = ~/.config/includes/git/hashcatHitman.github.com.inc
+	path = ~/.config/includes/git/hashcatHitman.github.com.gitconfig
 
 [alias]
 	aliases = config --get-regexp alias
