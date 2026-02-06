@@ -1,0 +1,7 @@
+[user]
+    name = hashcatHitman
+    email = 3924-hashcatHitman@gitlab.torproject.org
+    signingkey = ~/.ssh/tor_git_ed25519.pub
+
+[remote]
+    pushDefault = hashcatHitman

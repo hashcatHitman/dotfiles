@@ -1,0 +1,7 @@
+[user]
+    name = hashcatHitman
+    email = 155700084+hashcatHitman@users.noreply.github.com
+    signingkey = ~/.ssh/hashcatHitman_git_ed25519.pub
+
+[remote]
+    pushDefault = hashcatHitman
