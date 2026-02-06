@@ -1,0 +1,257 @@
+{
+  "[css][javascript][html]": {
+    "editor.rulers": [120],
+    "editor.wordWrapColumn": 120,
+    "prettier.printWidth": 120
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[jsonc][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.trailingComma": "none" // Cannot sort with trailing commas, see https://github.com/microsoft/vscode/issues/208763
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "basedpyright.analysis.autoFormatStrings": true,
+  "basedpyright.analysis.autoImportCompletions": true,
+  "basedpyright.analysis.autoSearchPaths": true,
+  "basedpyright.analysis.typeCheckingMode": "basic",
+  "basedpyright.analysis.useTypingExtensions": true,
+  "chat.agent.enabled": false,
+  "chat.disableAIFeatures": true,
+  "cmake.showOptionsMovedNotification": false,
+  "cSpell.checkOnlyEnabledFileTypes": true,
+  "cSpell.enabledFileTypes": {
+    "*": false,
+    "markdown": true,
+    "plaintext": true
+  },
+  "cSpell.language": "en-US",
+  "cSpell.trustedWorkspace": false,
+  "cSpell.userWords": [
+    "hashcat",
+    "Hitman",
+    "hashcatHitman",
+    "MSRV",
+    "rustflags",
+    "Zcrate"
+  ],
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.renderGutterMenu": false,
+  "diffEditor.renderSideBySide": true,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.aiStats.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.experimental.treeSitterTelemetry": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.inlineSuggest.edits.allowCodeShifting": "never",
+  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.showToolbar": "never",
+  "editor.insertSpaces": true,
+  "editor.largeFileOptimizations": false,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 80,
+  "editor.quickSuggestions": {
+    "other": "off"
+  },
+  "editor.rulers": [80],
+  "editor.snippetSuggestions": "none",
+  "editor.suggest.matchOnWordStartOnly": false,
+  "editor.tabSize": 4,
+  "editor.wordBasedSuggestions": "off",
+  "editor.wordWrapColumn": 80,
+  "evenBetterToml.formatter.columnWidth": 80,
+  "extensions.autoUpdate": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/Thumbs.db": false
+  },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "git.confirmSync": true,
+  "git.openRepositoryInParentFolders": "never",
+  "github.copilot.editor.enableCodeActions": false,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "html.format.wrapAttributes": "aligned-multiple",
+  "html.format.wrapLineLength": 80,
+  "http.systemCertificates": false,
+  "js/ts.implicitProjectConfig.module": "ES2022",
+  "json.schemaDownload.enable": false,
+  "markdownlint.lintWorkspaceGlobs": [
+    "**/*.md",
+    "**/*.markdown",
+    "!**/*" // Exclude files without extensions
+  ],
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.scrolling": true,
+  "npm.fetchOnlinePackageInfo": false,
+  "prettier.printWidth": 80,
+  "python.analysis.enablePerfTelemetry": false,
+  "python.analysis.reportExtraTelemetry": false,
+  "python.languageServer": "Jedi",
+  "redhat.telemetry.enabled": false,
+  "ruff.lineLength": 80,
+  "ruff.nativeServer": "auto",
+  "rust-analyzer.assist.preferSelf": true,
+  "rust-analyzer.assist.termSearch.borrowcheck": true,
+  "rust-analyzer.assist.termSearch.fuel": 18000,
+  "rust-analyzer.cachePriming.enable": true,
+  "rust-analyzer.cachePriming.numThreads": "physical",
+  "rust-analyzer.cargo.allTargets": true,
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.cargo.buildScripts.rebuildOnSave": true,
+  "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.check.allTargets": true,
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.extraArgs": ["--locked", "--future-incompat-report"],
+  "rust-analyzer.check.invocationStrategy": "once",
+  "rust-analyzer.check.workspace": true,
+  "rust-analyzer.completion.snippets.custom": {
+    "Arc::new": {
+      "body": "Arc::new(${receiver})",
+      "description": "Put the expression into an `Arc`",
+      "postfix": "arc",
+      "requires": "std::sync::Arc",
+      "scope": "expr"
+    },
+    "Box::pin": {
+      "body": "Box::pin(${receiver})",
+      "description": "Put the expression into a pinned `Box`",
+      "postfix": "pinbox",
+      "requires": "std::boxed::Box",
+      "scope": "expr"
+    },
+    "Err": {
+      "body": "Err(${receiver})",
+      "description": "Wrap the expression in a `Result::Err`",
+      "postfix": "err",
+      "scope": "expr"
+    },
+    "Ok": {
+      "body": "Ok(${receiver})",
+      "description": "Wrap the expression in a `Result::Ok`",
+      "postfix": "ok",
+      "scope": "expr"
+    },
+    "Rc::new": {
+      "body": "Rc::new(${receiver})",
+      "description": "Put the expression into an `Rc`",
+      "postfix": "rc",
+      "requires": "std::rc::Rc",
+      "scope": "expr"
+    },
+    "Some": {
+      "body": "Some(${receiver})",
+      "description": "Wrap the expression in an `Option::Some`",
+      "postfix": "some",
+      "scope": "expr"
+    }
+  },
+  "rust-analyzer.completion.termSearch.fuel": 10000,
+  "rust-analyzer.diagnostics.experimental.enable": false,
+  "rust-analyzer.diagnostics.styleLints.enable": true,
+  "rust-analyzer.hover.maxSubstitutionLength": null,
+  "rust-analyzer.hover.memoryLayout.alignment": "both",
+  "rust-analyzer.hover.memoryLayout.enable": true,
+  "rust-analyzer.hover.memoryLayout.niches": true,
+  "rust-analyzer.hover.memoryLayout.offset": "both",
+  "rust-analyzer.hover.memoryLayout.padding": "both",
+  "rust-analyzer.hover.memoryLayout.size": "both",
+  "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.imports.granularity.group": "module",
+  "rust-analyzer.imports.merge.glob": false,
+  "rust-analyzer.imports.preferNoStd": true,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.numThreads": null,
+  "rust-analyzer.procMacro.attributes.enable": true,
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.restartServerOnConfigChange": true,
+  "rust-analyzer.server.extraEnv": {
+    "CARGO_HOME": "/home/user/.cargo",
+    "PATH": "/home/user/.cargo/bin:/home/user/.local/bin:/home/user/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin",
+    "RUSTUP_HOME": "/home/user/.rustup"
+  },
+  "rust-analyzer.statusBar.showStatusBar": "always",
+  "search.maxResults": 99999999999999999999999999999, // Allegedly, `null` works. I got better results like this.
+  "search.ripgrep.maxThreads": 32,
+  "settingsSync.keybindingsPerPlatform": false,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "tinymist.formatterMode": "typstyle",
+  "tinymist.lint.enabled": true,
+  "tinymist.lint.when": "onSave",
+  "tinymist.preview.refresh": "onType",
+  "tinymist.systemFonts": false,
+  "update.mode": "manual",
+  "update.showReleaseNotes": true,
+  "window.newWindowProfile": "Default",
+  "window.restoreWindows": "none",
+  "workbench.cloudChanges.autoResume": "off",
+  "workbench.cloudChanges.continueOn": "off",
+  "workbench.colorTheme": "Silent Red Theme",
+  "workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
+  "workbench.commandPalette.showAskInChat": false,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.enableExperiments": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.settings.alwaysShowAdvancedSettings": true,
+  "workbench.settings.applyToAllProfiles": [
+    "files.eol",
+    "files.insertFinalNewline",
+    "files.trimFinalNewlines"
+  ],
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.settings.showAISearchToggle": false, // I am assuming this turns it off. If I find otherwise, I will be changing it. It's a little confusing.
+  "workbench.startupEditor": "none"
+}
