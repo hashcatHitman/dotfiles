@@ -49,7 +49,7 @@
 	logAllRefUpdates = true
 
     # Paths to ignore are kept in the global gitignore.
-	excludesfile = ~/excludes.gitignore
+	excludesfile = ~/.excludes.gitignore
 
 [tag]
     # Sign tags.
