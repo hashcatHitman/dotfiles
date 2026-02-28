@@ -24,9 +24,7 @@
     "prettier.trailingComma": "none" // Cannot sort with trailing commas, see https://github.com/microsoft/vscode/issues/208763
   },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -35,20 +33,13 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[typst]": {
-    "editor.defaultFormatter": "myriad-dreamin.tinymist",
-    "editor.formatOnSave": true
-  },
-  "[yaml]": {
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
   },
   "basedpyright.analysis.autoFormatStrings": true,
   "basedpyright.analysis.autoImportCompletions": true,
