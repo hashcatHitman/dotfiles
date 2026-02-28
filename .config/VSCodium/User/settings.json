@@ -1,4 +1,7 @@
 {
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  },
   "[css][javascript][html]": {
     "editor.rulers": [120],
     "editor.wordWrapColumn": 120,
