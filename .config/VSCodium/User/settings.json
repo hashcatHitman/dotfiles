@@ -132,7 +132,7 @@
   "prettier.printWidth": 80,
   "python.analysis.enablePerfTelemetry": false,
   "python.analysis.reportExtraTelemetry": false,
-  "python.languageServer": "Jedi",
+  "python.languageServer": "None",
   "redhat.telemetry.enabled": false,
   "ruff.lineLength": 80,
   "ruff.nativeServer": "auto",
