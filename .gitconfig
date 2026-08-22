@@ -107,3 +107,7 @@ insteadOf = https://gitlab.torproject.org/
 # Replace HTTPS repository links with their SSH counterparts.
 [url "ssh://git@hashcatHitman.github.com/"]
 insteadOf = https://github.com/
+
+# Fix cargo-audit (only works over HTTPS)
+[includeIf "gitdir:~/.cargo/advisory-db/"]
+	path = ~/.config/includes/git/cargo_audit_advisory_db.gitconfig
