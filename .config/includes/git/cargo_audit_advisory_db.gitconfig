@@ -1,0 +1,7 @@
+# Allow HTTPS since cargo-audit refuses to work over SSH
+[protocol.https]
+	allow = always
+
+# Keep the cargo-audit advisory database URL from becoming a broken SSH URL
+[url "https://github.com/RustSec/advisory-db.git"]
+insteadOf = https://github.com/RustSec/advisory-db.git
