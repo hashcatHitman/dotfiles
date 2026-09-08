@@ -55,6 +55,7 @@
   "cSpell.checkOnlyEnabledFileTypes": true,
   "cSpell.enabledFileTypes": {
     "*": false,
+    "latex": true,
     "markdown": true,
     "plaintext": true
   },
