@@ -1,4 +1,8 @@
 {
+  "[bibtex]": {
+    "editor.defaultFormatter": "efoerster.texlab",
+    "editor.formatOnSave": false
+  },
   "[c]": {
     "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
