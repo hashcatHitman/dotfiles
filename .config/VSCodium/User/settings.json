@@ -23,6 +23,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.trailingComma": "none" // Cannot sort with trailing commas, see https://github.com/microsoft/vscode/issues/208763
   },
+  "[latex]": {
+    "editor.defaultFormatter": "efoerster.texlab"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
