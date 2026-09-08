@@ -154,6 +154,7 @@ Theme=breeze-dark
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
+SingleClick=false
 contrast=4
 frameContrast=0.2
 widgetStyle=Breeze
