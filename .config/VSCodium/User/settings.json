@@ -104,7 +104,7 @@
   "editor.wordBasedSuggestions": "off",
   "editor.wordWrapColumn": 80,
   "evenBetterToml.formatter.columnWidth": 80,
-  "extensions.autoUpdate": false,
+  "extensions.autoUpdate": "off",
   "files.eol": "\n",
   "files.exclude": {
     "**/.DS_Store": false,
