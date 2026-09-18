@@ -1,0 +1,6 @@
+# Two week cooldown on package installs
+exclude-newer = "14 days"
+
+# Two week cooldown on pip commands (?)
+[pip]
+exclude-newer = "14 days"
