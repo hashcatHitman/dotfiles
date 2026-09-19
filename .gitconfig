@@ -61,6 +61,10 @@
     # Fetch all remotes
     all = true
 
+[format]
+    # See commit/author info separately in git-log and friends
+    pretty = fuller
+
 [tag]
     # Sign tags.
 	forceSignAnnotated = true
