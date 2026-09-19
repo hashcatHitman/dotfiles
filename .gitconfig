@@ -19,6 +19,12 @@
     # Makes life easier for rebase-centered workflows.
 	rb = rebase --autostash
 	pf = push --force-with-lease --force-if-includes
+    # If you alias `git='TZ=UTC0 git'` in `.bashrc`, for example, this will set
+    # the timezone of every author date and commit date of every commit to UTC0,
+    # without changing the timestamp. That is, a commit authored 1 week ago and
+    # committed 2 hours ago will still show as authored 1 week ago and committed
+    # 2 hours ago.
+    tz-reset = -c rebase.instructionFormat=\"%s%nexec GIT_COMMITTER_DATE=\\\"%ct\\\" git commit --amend --no-edit --date=%at\" rebase --root -i
 
 [branch]
     # Setup rebase instead of merge for new branches on pull.
