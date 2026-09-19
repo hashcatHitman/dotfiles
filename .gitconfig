@@ -31,6 +31,19 @@
     # 2 hours ago.
     tz-reset = -c rebase.instructionFormat=\"%s%nexec GIT_COMMITTER_DATE=\\\"%ct\\\" git commit --amend --no-edit --date=%at\" rebase --root -i
 
+    # This seems to be the best (only?) way to see details about tags such as:
+    # - who the tagger is
+    # - when the tag was created
+    # - the full tag message
+    #
+    # Even `git show --format=raw`is missing the tag timestamp. Where does this
+    # even get stored?
+    #
+    # It will also include the signature, but beware! The "good signature"
+    # message does NOT belong to the tag! It belongs to the commit! You *must*
+    # verify tag signatures with `git tag -v`.
+    tag-details = show --no-patch --format=fuller
+
 [branch]
     # Setup rebase instead of merge for new branches on pull.
 	autoSetupRebase = always
