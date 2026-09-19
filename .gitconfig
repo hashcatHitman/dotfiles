@@ -57,6 +57,10 @@
     # Paths to ignore are kept in the global gitignore.
 	excludesfile = ~/.excludes.gitignore
 
+[fetch]
+    # Fetch all remotes
+    all = true
+
 [tag]
     # Sign tags.
 	forceSignAnnotated = true
