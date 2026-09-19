@@ -6,6 +6,9 @@ if ! [[ "$PATH" == *"$HOME/.local/bin:$HOME/bin:"* ]]; then
 fi
 export PATH
 
+# Place pycache files in home cache directory
+export PYTHONPYCACHEPREFIX="$HOME/.cache/__pycache__"
+
 # Set JAVA_HOME
 export JAVA_HOME=/usr/lib/jvm/java-latest-openjdk/
 
