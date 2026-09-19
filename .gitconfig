@@ -103,6 +103,9 @@
     # I want to see signatures on commits.
 	showSignature = true
 
+    # Show full ref decorations
+    decorate = full
+
 [merge]
     # I hate merge commits. Linear history is much nicer IMO.
 	ff = only
