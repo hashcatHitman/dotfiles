@@ -15,10 +15,13 @@
 	path = ~/.config/includes/git/hashcatHitman.github.com.gitconfig
 
 [alias]
+    # List aliases.
 	aliases = config --get-regexp alias
 
-    # Makes life easier for rebase-centered workflows.
+    # Automatically stash before rebase and apply after.
 	rb = rebase --autostash
+
+    # Force-push, but make sure you don't overwrite new changes on the remote.
 	pf = push --force-with-lease --force-if-includes
 
     # If you alias `git='TZ=UTC0 git'` in `.bashrc`, for example, this will set
@@ -98,6 +101,7 @@
 	required = true
 
 [init]
+    # Shorter and nicer. Modern default.
 	defaultBranch = main
 
     # I want to use `sha256`, but GitHub doesn't support it yet.
