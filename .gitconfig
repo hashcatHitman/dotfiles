@@ -60,6 +60,8 @@
 [diff]
     # Files to consider in rename detection; 0 is unlimited as per `git diff -l`
     renameLimit = 0
+    # Detect renames and copies
+    renames = copies
 
 [fetch]
     # Fetch all remotes
