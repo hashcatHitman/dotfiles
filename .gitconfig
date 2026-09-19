@@ -114,6 +114,10 @@
     # I want to set this to `true`, but GitHub doesn't support it yet.
 	gpgSign = if-asked
 
+[rebase]
+    # Do not allow accidental commit loss. Require explicit "drop".
+    missingCommitsCheck = error
+
 # Replace HTTPS repository links with their SSH counterparts.
 [url "ssh://git@gitlab.torproject.org/"]
 insteadOf = https://gitlab.torproject.org/
