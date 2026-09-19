@@ -57,6 +57,10 @@
     # Paths to ignore are kept in the global gitignore.
 	excludesfile = ~/.excludes.gitignore
 
+    # Protect changes from unclean system shutdowns
+    fsync = all
+    fsyncMethod = fsync
+
 [diff]
     # Files to consider in rename detection; 0 is unlimited as per `git diff -l`
     renameLimit = 0
