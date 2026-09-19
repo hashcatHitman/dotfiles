@@ -118,6 +118,10 @@
     # Do not allow accidental commit loss. Require explicit "drop".
     missingCommitsCheck = error
 
+[transfer]
+    # Fail to parse URLs with plaintext credentials.
+    credentialsInUrl = die
+
 # Replace HTTPS repository links with their SSH counterparts.
 [url "ssh://git@gitlab.torproject.org/"]
 insteadOf = https://gitlab.torproject.org/
