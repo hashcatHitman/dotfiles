@@ -16,9 +16,11 @@
 
 [alias]
 	aliases = config --get-regexp alias
+
     # Makes life easier for rebase-centered workflows.
 	rb = rebase --autostash
 	pf = push --force-with-lease --force-if-includes
+
     # If you alias `git='TZ=UTC0 git'` in `.bashrc`, for example, this will set
     # the timezone of every author date and commit date of every commit to UTC0,
     # without changing the timestamp. That is, a commit authored 1 week ago and
@@ -64,6 +66,7 @@
 [diff]
     # Files to consider in rename detection; 0 is unlimited as per `git diff -l`
     renameLimit = 0
+
     # Detect renames and copies
     renames = copies
 
@@ -96,6 +99,7 @@
 
 [init]
 	defaultBranch = main
+
     # I want to use `sha256`, but GitHub doesn't support it yet.
 	defaultObjectFormat = sha1
 
