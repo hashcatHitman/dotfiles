@@ -1,4 +1,4 @@
-# .bashrc
+#!/bin/bash
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -6,25 +6,14 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+if [ -f "$HOME/.bash_modules/exports.bash" ]; then
+    source "$HOME/.bash_modules/exports.bash"
 fi
-export PATH
-export JAVA_HOME=/usr/lib/jvm/java-latest-openjdk/
-source "$HOME/.cargo/env"
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-    for rc in ~/.bashrc.d/*; do
-        if [ -f "$rc" ]; then
-            source "$rc"
-        fi
-    done
+# User specific aliases
+if [ -f "$HOME/.bash_modules/aliases.bash" ]; then
+    source "$HOME/.bash_modules/aliases.bash"
 fi
-unset rc
 
 # Starship prompt
 eval "$(starship init bash)"

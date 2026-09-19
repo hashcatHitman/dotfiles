@@ -1,8 +1,6 @@
-# .bash_profile
+#!/bin/bash
 
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
+# Load .bashrc
+if [ -f "$HOME/.bashrc" ]; then
+    source "$HOME/.bashrc"
 fi
-
-# User specific environment and startup programs
