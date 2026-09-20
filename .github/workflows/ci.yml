@@ -60,11 +60,5 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - name: Enable `dotglob`
-        run: shopt -s dotglob
-      - name: Enable `globskipdots`
-        run: shopt -s globskipdots
-      - name: Enable `globstar`
-        run: shopt -s globstar
       - name: Shellcheck
-        run: shellcheck -o all .bash_[!m]* .bashrc **/*.bash
+        run: shopt -s dotglob globskipdots globstar && shellcheck -o all .bash_[!m]* .bashrc **/*.bash
