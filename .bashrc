@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Globs will now also match hidden files.
+shopt -s dotglob
+
+# Globs will never match . or .., though.
+shopt -s globskipdots
+
+# Globs will now allow ** for recusrive matching.
+shopt -s globstar
+
 # Source global definitions
 if [[ -f /etc/bashrc ]]; then
     # shellcheck disable=SC1091
