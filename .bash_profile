@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # Load .bashrc
-if [ -f "$HOME/.bashrc" ]; then
-    source "$HOME/.bashrc"
+if [[ -f "${HOME}/.bashrc" ]]; then
+    source "${HOME}/.bashrc"
 fi

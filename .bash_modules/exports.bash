@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Add personal bin directories to path if absent
-if ! [[ "$PATH" == *"$HOME/.local/bin:$HOME/bin:"* ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+if [[ "${PATH}" != *"${HOME}/.local/bin:${HOME}/bin:"* ]]; then
+    PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"
 fi
 export PATH
 
 # Place pycache files in home cache directory
-export PYTHONPYCACHEPREFIX="$HOME/.cache/__pycache__"
+export PYTHONPYCACHEPREFIX="${HOME}/.cache/__pycache__"
 
 # Set JAVA_HOME
 export JAVA_HOME=/usr/lib/jvm/java-latest-openjdk/
@@ -22,4 +22,5 @@ export DO_NOT_TRACK=1
 export GH_TELEMETRY=0
 
 # Load cargo env
-source "$HOME/.cargo/env"
+# shellcheck disable=SC1091
+source "${HOME}/.cargo/env"
