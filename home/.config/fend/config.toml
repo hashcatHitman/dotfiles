@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 # Choose whether or not colors should be enabled. Possible
 # values are 'never', 'auto' (default) or 'always'
 # enable-colors = 'auto'

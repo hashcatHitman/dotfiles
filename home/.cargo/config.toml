@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 [build]
 # Comment out when working on rust-lang/rust-clippy (link-arg breaks the build)
 rustflags = ["-Ctarget-cpu=native", "-Clink-arg=-fuse-ld=mold"]

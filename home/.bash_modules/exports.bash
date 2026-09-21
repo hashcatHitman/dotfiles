@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
 # Add personal bin directories to path if absent
 if [[ "${PATH}" != *"${HOME}/.local/bin:${HOME}/bin:"* ]]; then
     PATH="${HOME}/.local/bin:${HOME}/bin:${PATH}"

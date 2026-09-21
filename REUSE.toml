@@ -1,0 +1,32 @@
+version = 1
+
+[[annotations]]
+path = [
+    "home/.config/Trolltech.conf",
+    "home/.config/VSCodium/User/settings.json",
+    "home/.config/fontconfig/fonts.conf",
+    "home/.config/gtk-2.0/gtkfilechooser.ini",
+    "home/.config/gtk-3.0/bookmarks",
+    "home/.config/gtk-3.0/colors.css",
+    "home/.config/gtk-3.0/gtk.css",
+    "home/.config/gtk-3.0/gtk.css.bak",
+    "home/.config/gtk-3.0/settings.ini",
+    "home/.config/gtk-4.0/colors.css",
+    "home/.config/gtk-4.0/cosmic/dark.css",
+    "home/.config/gtk-4.0/cosmic/light.css",
+    "home/.config/gtk-4.0/gtk.css",
+    "home/.config/gtk-4.0/gtk.css.bak",
+    "home/.config/gtk-4.0/settings.ini",
+    "home/.config/kcminputrc",
+    "home/.config/kdeglobals",
+    "home/.config/kscreenlockerrc",
+    "home/.config/ksplashrc",
+    "home/.config/pip/pip.conf",
+    "home/.config/plasmarc",
+    "home/.config/xsettingsd/xsettingsd.conf",
+    "home/.fonts.conf",
+    "home/.gtkrc-2.0-kde4",
+]
+precedence = "closest"
+SPDX-FileCopyrightText = "© 2026 hashcatHitman"
+SPDX-License-Identifier = "Apache-2.0 OR MIT"
