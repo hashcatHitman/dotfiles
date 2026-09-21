@@ -29,7 +29,7 @@
     # without changing the timestamp. That is, a commit authored 1 week ago and
     # committed 2 hours ago will still show as authored 1 week ago and committed
     # 2 hours ago.
-    tz-reset = -c rebase.instructionFormat=\"%s%nexec GIT_COMMITTER_DATE=\\\"%ct\\\" git commit --amend --no-edit --date=%at\" rebase --root -i
+    tz-reset = "-c rebase.instructionFormat='%s%nexec GIT_COMMITTER_DATE=\"@%ct\" git commit --amend --no-edit --date=\"@%at\"' rebase -i"
 
     # This will start a rebase with commented-out `exec` instructions after each
     # commit. If you uncomment the `exec` after a commit, it will change the
