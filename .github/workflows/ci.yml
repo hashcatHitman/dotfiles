@@ -61,4 +61,4 @@ jobs:
         with:
           persist-credentials: false
       - name: Shellcheck
-        run: shopt -s dotglob globskipdots globstar && shellcheck -o all .bash_[!m]* .bashrc **/*.bash
+        run: shopt -s dotglob globskipdots globstar && shellcheck home/.bash_[!m]* home/.bashrc **/*.bash

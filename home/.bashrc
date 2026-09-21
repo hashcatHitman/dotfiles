@@ -17,11 +17,13 @@ fi
 
 # User specific environment
 if [[ -f "${HOME}/.bash_modules/exports.bash" ]]; then
+    # shellcheck source-path=home
     source "${HOME}/.bash_modules/exports.bash"
 fi
 
 # User specific aliases
 if [[ -f "${HOME}/.bash_modules/aliases.bash" ]]; then
+    # shellcheck source-path=home
     source "${HOME}/.bash_modules/aliases.bash"
 fi
 

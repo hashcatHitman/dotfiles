@@ -232,11 +232,14 @@
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.linux": "bash",
+  "tinymist.fontPaths": [
+    "/home/user/Code/typst_workshop/BrittanySignature.ttf"
+  ],
   "tinymist.formatterMode": "typstyle",
   "tinymist.lint.enabled": true,
   "tinymist.lint.when": "onSave",
   "tinymist.preview.refresh": "onType",
-  "tinymist.systemFonts": false,
+  "tinymist.systemFonts": true,
   "update.mode": "manual",
   "update.showReleaseNotes": true,
   "window.newWindowProfile": "Default",
