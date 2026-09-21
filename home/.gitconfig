@@ -31,6 +31,20 @@
     # 2 hours ago.
     tz-reset = -c rebase.instructionFormat=\"%s%nexec GIT_COMMITTER_DATE=\\\"%ct\\\" git commit --amend --no-edit --date=%at\" rebase --root -i
 
+    # This will start a rebase with commented-out `exec` instructions after each
+    # commit. If you uncomment the `exec` after a commit, it will change the
+    # author and committer to the currently configured user. The author date and
+    # commit date will be preserved, but their timezones will be changed
+    # according to your system/the `TZ` environment variable. Each commit will
+    # also havea signed-off-by trailer added for the currently configured user.
+    # You will be given a chance to edit the commit message, allowing you to
+    # reword it and/or remove trailers from the original message.
+    #
+    # This is best used to steal commits from bots on your project, such as
+    # Dependabot. It will allow you to avoid dealing with unverified commits in
+    # the event of a history rewrite.
+    steal = "-c rebase.instructionFormat='%s%n# exec GIT_COMMITTER_DATE=\"@%ct\" git commit --amend --reset-author -s --date=\"@%at\"' rebase -i"
+
     # This seems to be the best (only?) way to see details about tags such as:
     # - who the tagger is
     # - when the tag was created
