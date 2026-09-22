@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+name: Shellcheck
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch: {}
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  shellcheck:
+    name: Shellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Shellcheck
+        run: shopt -s dotglob globskipdots globstar && shellcheck home/.bash_[!m]* home/.bashrc **/*.bash
