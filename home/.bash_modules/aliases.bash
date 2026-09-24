@@ -11,6 +11,7 @@ alias git='TZ=UTC0 git'
 #
 # Display:
 # -F does things like ending directories with `/` and sym links with `@`
+# --icons auto tries to use icons from Nerd Fonts. Must be installed.
 #
 # Sorting:
 # --group-directories-first lists directories first. Duh!
@@ -19,4 +20,4 @@ alias git='TZ=UTC0 git'
 # -b shows file sizes with binary prefixes (KiB, etc)
 # -h adds a header
 # --smart-group only shows the group if the name is different than the owner
-alias eza='eza -F -bh --group-directories-first --smart-group'
+alias eza='eza -F -bh --group-directories-first --smart-group --icons auto'
