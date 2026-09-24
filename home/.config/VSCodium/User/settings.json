@@ -109,6 +109,8 @@
   "editor.wordWrapColumn": 80,
   "evenBetterToml.formatter.columnWidth": 80,
   "extensions.autoUpdate": "off",
+  "extensions.autoUpdateDelay": 336, // 336 hours = 14 days
+  "extensions.minReleaseAge": 336, // 336 hours = 14 days
   "files.eol": "\n",
   "files.exclude": {
     "**/.DS_Store": false,
@@ -242,6 +244,7 @@
   "tinymist.lint.when": "onSave",
   "tinymist.preview.refresh": "onType",
   "tinymist.systemFonts": true,
+  "update.minReleaseAge": 336, // 336 hours = 14 days
   "update.mode": "manual",
   "update.showReleaseNotes": true,
   "window.newWindowProfile": "Default",
