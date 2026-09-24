@@ -43,6 +43,7 @@ ln -sv ~/.dotfiles/home/.config/shellcheckrc ~/.config/
 ln -sv ~/.dotfiles/home/.config/plasmarc ~/.config/
 ln -sv ~/.dotfiles/home/.config/ksplashrc ~/.config/
 ln -sv ~/.dotfiles/home/.config/kscreenlockerrc ~/.config/
+ln -sv ~/.dotfiles/home/.config/kwinrc ~/.config/
 ln -sv ~/.dotfiles/home/.config/kdeglobals ~/.config/
 ln -sv ~/.dotfiles/home/.config/kcminputrc ~/.config/
 
