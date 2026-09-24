@@ -21,6 +21,7 @@ path = [
     "home/.config/kdeglobals",
     "home/.config/kscreenlockerrc",
     "home/.config/ksplashrc",
+    "home/.config/kwinrc",
     "home/.config/pip/pip.conf",
     "home/.config/plasmarc",
     "home/.config/xsettingsd/xsettingsd.conf",
