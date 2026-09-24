@@ -73,6 +73,8 @@
     "Kellam",
     "MSRV",
     "rustflags",
+    "supertrait",
+    "upcastable",
     "Zcrate"
   ],
   "diffEditor.experimental.showMoves": true,
