@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 # Two week cooldown on package installs
+#
+# Last I tested it, this explicitly *does* appply to all of the following:
+# - uvx <tool>
+# - uv tool run <tool>
+# - uv tool install <tool>
 exclude-newer = "14 days"
 
 # Two week cooldown on pip commands (?)
