@@ -233,6 +233,8 @@
   "search.maxResults": 99999999999999999999999999999, // Allegedly, `null` works. I got better results like this.
   "search.ripgrep.maxThreads": 32,
   "settingsSync.keybindingsPerPlatform": false,
+  "shellcheck.customArgs": ["--external-sources"],
+  "shellcheck.useWorkspaceRootAsCwd": true,
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.linux": "bash",
