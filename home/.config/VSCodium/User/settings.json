@@ -42,6 +42,11 @@
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt",
+    "editor.detectIndentation": false, // mkhl.shfmt changes this for shellscript, so re-override it
+    "editor.insertSpaces": true // mkhl.shfmt changes this for shellscript, so re-override it
+  },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
@@ -235,6 +240,7 @@
   "settingsSync.keybindingsPerPlatform": false,
   "shellcheck.customArgs": ["--external-sources"],
   "shellcheck.useWorkspaceRootAsCwd": true,
+  "shfmt.executableArgs": ["-i", "4"],
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.linux": "bash",
