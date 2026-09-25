@@ -241,7 +241,12 @@
   "shellcheck.customArgs": ["--external-sources"],
   "shellcheck.useWorkspaceRootAsCwd": true,
   "shfmt.executableArgs": ["-i", "4"],
+  "telemetry.editStats.details.enabled": false,
+  "telemetry.editStats.enabled": false,
+  "telemetry.editStats.showDecorations": false,
+  "telemetry.editStats.showStatusBar": false,
   "telemetry.feedback.enabled": false,
+  "telemetry.performance.inputLatencySamplingProbability": 0,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.defaultProfile.linux": "bash",
   "tinymist.fontPaths": [
