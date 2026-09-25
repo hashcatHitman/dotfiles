@@ -4,7 +4,16 @@
 #
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
-# Set the timezone offset to +0000 for git commands.
+# Set the timezone offset to +0000 for `git` commands.
+#
+# USER BEWARE:  This won't apply when using `git` inside scripts! You should
+# add a line like so:
+#
+# ```bash
+# export TZ="Etc/UTC"
+# ```
+#
+# To the top of any script you want to run under UTC.
 alias git='TZ=Etc/UTC git'
 
 # `eza` how I like it.
