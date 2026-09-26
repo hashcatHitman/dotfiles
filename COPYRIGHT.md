@@ -10,7 +10,7 @@ Copyright © `2026` `hashcatHitman`
 
 ## License
 
-Except as otherwise noted, this project is is licensed under the
+Except as otherwise noted, this project is licensed under the
 [Apache License, Version 2.0] or the [MIT license], at your option.
 
 [Apache License, Version 2.0]: LICENSE-APACHE "If this link fails, see <http://www.apache.org/licenses/LICENSE-2.0>"
