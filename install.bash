@@ -4,7 +4,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
-# Files in home
+# Files in `~` ("${HOME}")
 ln -sv ~/.dotfiles/home/.bashrc ~
 ln -sv ~/.dotfiles/home/.bash_profile ~
 ln -sv ~/.dotfiles/home/.bash_logout ~
@@ -15,14 +15,14 @@ ln -sv ~/.dotfiles/home/.gdbinit ~
 ln -sv ~/.dotfiles/home/.fonts.conf ~
 ln -sv ~/.dotfiles/home/.excludes.gitignore ~
 
-# Directories in home
+# Directories in `~` ("${HOME}")
 ln -sv ~/.dotfiles/home/.bash_modules/ ~
 
-# Files in .cargo
+# Files in `~/.cargo`
 ln -sv ~/.dotfiles/home/.cargo/config.toml ~/.cargo/
 ln -sv ~/.dotfiles/home/.cargo/clippy.toml ~/.cargo/
 
-# Directories in .config
+# Directories in `~/.config`
 ln -sv ~/.dotfiles/home/.config/xsettingsd/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/uv/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/pip/ ~/.config/
@@ -36,7 +36,7 @@ ln -sv ~/.dotfiles/home/.config/fontconfig/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/fend/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/CrabFetch/ ~/.config/
 
-# Files in .config
+# Files in `~/.config`
 ln -sv ~/.dotfiles/home/.config/Trolltech.conf ~/.config/
 ln -sv ~/.dotfiles/home/.config/starship.toml ~/.config/
 ln -sv ~/.dotfiles/home/.config/shellcheckrc ~/.config/
@@ -47,5 +47,5 @@ ln -sv ~/.dotfiles/home/.config/kwinrc ~/.config/
 ln -sv ~/.dotfiles/home/.config/kdeglobals ~/.config/
 ln -sv ~/.dotfiles/home/.config/kcminputrc ~/.config/
 
-# Files in .config/VSCodium/User
+# Files in `~/.config/VSCodium/User`
 ln -sv ~/.dotfiles/home/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/
