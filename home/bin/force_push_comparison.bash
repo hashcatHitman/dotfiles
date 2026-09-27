@@ -8,7 +8,7 @@
 # `--force-if-includes` when force pushing.
 #
 # To use it, create a new repository on your favorite forge (such as GitHub or
-# GitLab). Make sure it has at least one commit. Clone it twice two two separate
+# GitLab). Make sure it has at least one commit. Clone it twice to two separate
 # directories on your machine.
 #
 # The variables in RUN CONFIGURATION may be changed before each run of the
