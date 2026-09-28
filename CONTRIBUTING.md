@@ -88,26 +88,6 @@ that was causing crashes. That's gone now.
 Above all else, your commit message should be descriptive and explain what has
 changed.
 
-## Rust Version
-
-This project uses some lints that require the Nightly toolchain. You are
-encouraged to use Nightly for development, but keep in mind the project is
-expected to pass CI on MSRV. The lints have been configured such that you will
-get warnings for `unknown_lints` on MSRV, but should still be able to build
-and test fine.
-
-If you are developing on Nightly, you should create `./.cargo/config.toml` and
-include at least the following:
-
-```toml
-[build]
-rustflags = [
-    "-Zcrate-attr=feature(strict_provenance_lints,unqualified_local_imports,must_not_suspend,multiple_supertrait_upcastable,non_exhaustive_omitted_patterns_lint,supertrait_item_shadowing)",
-]
-```
-
-This enables the features needed for the Nightly-only lints.
-
 ## Licensing
 
 <!-- Adapted from Arti's README -->
