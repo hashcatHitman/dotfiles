@@ -8,6 +8,7 @@
 ln -sv ~/.dotfiles/home/.bashrc ~
 ln -sv ~/.dotfiles/home/.bash_profile ~
 ln -sv ~/.dotfiles/home/.bash_logout ~
+ln -sv ~/.dotfiles/home/.curlrc ~
 ln -sv ~/.dotfiles/home/.gitconfig ~
 ln -sv ~/.dotfiles/home/.minirc.dfl ~
 ln -sv ~/.dotfiles/home/.gtkrc-2.0-kde4 ~
