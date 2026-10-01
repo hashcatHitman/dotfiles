@@ -1,2 +1,7 @@
 [Effect-overview]
 BorderActivate=9
+
+[NightColor]
+Active=true
+Mode=Constant
+NightTemperature=2500
