@@ -50,3 +50,6 @@ ln -sv ~/.dotfiles/home/.config/kcminputrc ~/.config/
 
 # Files in `~/.config/VSCodium/User`
 ln -sv ~/.dotfiles/home/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/
+
+# Files in `~/bin`
+ln -sv ~/.dotfiles/home/bin/cargo_cooldown_updates.bash ~/bin/
