@@ -269,6 +269,7 @@
   "workbench.commandPalette.showAskInChat": false,
   "workbench.editor.empty.hint": "hidden",
   "workbench.enableExperiments": false,
+  "workbench.experimental.modernUI": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.settings.alwaysShowAdvancedSettings": true,
   "workbench.settings.applyToAllProfiles": [
