@@ -10,6 +10,10 @@ if [[ "${PATH}" != *"${HOME}/.local/bin:${HOME}/bin:"* ]]; then
 fi
 export PATH
 
+# Increase shell history size
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+
 # Place pycache files in home cache directory
 export PYTHONPYCACHEPREFIX="${HOME}/.cache/__pycache__"
 
