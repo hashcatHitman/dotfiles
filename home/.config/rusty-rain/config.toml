@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+# This configuration is roughly equivalent to:
+#
+# ```bash
+# rusty-rain -s -g classic -C red --shade-gradient "#181818"
+# ```
+#
+# Unfortunately, you have to manually recreate the "classic" group for this to
+# work.
+
+shade = true
+color = "red"
+shade_gradient = "#181818"
+group = "classic"
+
+[custom.classic]
+range = [
+    { start = 65382, end = 65437 },
+    { start = 48, end = 57 },
+    { start = 34, end = 35 },
+    { start = 42, end = 44 },
+    { start = 45, end = 47 },
+    { start = 58, end = 59 },
+    { start = 60, end = 63 },
+    { start = 124, end = 127 },
+    { start = 166, end = 167 },
+]
+width = 2

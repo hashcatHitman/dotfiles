@@ -36,6 +36,7 @@ ln -sv ~/.dotfiles/home/.config/gtk-2.0/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/fontconfig/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/fend/ ~/.config/
 ln -sv ~/.dotfiles/home/.config/CrabFetch/ ~/.config/
+ln -sv ~/.dotfiles/home/.config/rusty-rain/ ~/.config/
 
 # Files in `~/.config`
 ln -sv ~/.dotfiles/home/.config/Trolltech.conf ~/.config/
