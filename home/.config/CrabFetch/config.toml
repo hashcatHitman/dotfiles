@@ -356,7 +356,7 @@ format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 # {gtk3} -> The current GTK3 icons
 # {gtk4} -> The current GTK4 icons
 title = "Icons"
-format = "Gtk3: {gtk3}  Gtk4: {gtk4}"
+format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 
 
 [player]
