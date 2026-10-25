@@ -30,3 +30,8 @@ alias git='TZ=Etc/UTC git'
 # -h adds a header
 # --smart-group only shows the group if the name is different than the owner
 alias eza='eza -F -bh --group-directories-first --smart-group --icons auto'
+
+# Whenever `rustup update` breaks (always), these should work instead.
+alias renightly='rustup toolchain uninstall nightly && rustup toolchain install nightly --component cargo,clippy,llvm-tools,rust-analyzer,rust-docs,rust-src,rust-std,rustc,rustc-dev,rustc-docs,rustfmt,miri'
+alias rebeta='rustup toolchain uninstall beta && rustup toolchain install beta --component cargo,clippy,llvm-tools,rust-analyzer,rust-docs,rust-src,rust-std,rustc,rustc-dev,rustc-docs,rustfmt'
+alias restable='rustup toolchain uninstall stable && rustup toolchain install stable --component cargo,clippy,llvm-tools,rust-analyzer,rust-docs,rust-src,rust-std,rustc,rustc-dev,rustc-docs,rustfmt'
