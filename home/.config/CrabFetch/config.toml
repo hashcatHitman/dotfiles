@@ -94,7 +94,7 @@ progress_target_length = 20
 
 # Whether to use 'ibibytes opposed to 'gabytes 
 # E.g use Gibibytes (GiB) opposed to Gigabytes (GB)
-use_ibis = false
+use_ibis = true
 
 # Whether to supress any errors that come or not
 suppress_errors = true
