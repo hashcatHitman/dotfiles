@@ -189,7 +189,7 @@ detect_through_driver = false
 # - {vendor} -> The vendor of the GPU, e.g AMD
 # - {model} -> The model of the GPU, e.g Radeon RX 7800XT
 # - {vram} -> The total memory of the GPU.
-title = "GPU"
+title = "GPU {index}"
 format = "{vendor} {model} ({vram})"
 
 
