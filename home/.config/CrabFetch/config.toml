@@ -164,7 +164,7 @@ format = "{color-title}{username}{color-white}@{color-title}{hostname}"
 # {max_clock_mhz} -> The maximum clock speed, in MHz.
 # {max_clock_ghz} -> The maximum clock speed, in GHz.
 # {arch} -> The architecture of your CPU.
-title = "CPU"
+title = " CPU" # nf-oct-cpu
 format = "{name} {arch} ({core_count}c {thread_count}t) @ {current_clock_ghz} / {max_clock_ghz} GHz"
 
 # Whether to attempt to remove any trailing "x-Core Processor" left in the branding name by the manufacturer
@@ -189,7 +189,7 @@ detect_through_driver = false
 # - {vendor} -> The vendor of the GPU, e.g AMD
 # - {model} -> The model of the GPU, e.g Radeon RX 7800XT
 # - {vram} -> The total memory of the GPU.
-title = "GPU {index}"
+title = "󰢮 GPU {index}" # nf-md-expansion_card
 format = "{vendor} {model} ({vram})"
 
 
@@ -199,7 +199,7 @@ format = "{vendor} {model} ({vram})"
 # {max} -> The maximum total memory.
 # {bar} -> A progress bar representing the total space available/taken.
 # {percent} -> Percentage of memory used
-title = "Memory"
+title = "󰘚 Memory" # nf-fa-memory
 format = "{bar} {used} / {max} ({percent})"
 
 
@@ -209,7 +209,7 @@ format = "{bar} {used} / {max} ({percent})"
 # {total} -> The maximum total swap.
 # {bar} -> A progress bar representing the total space available/taken.
 # {percent} -> Percentage of swap used
-title = "Swap"
+title = "󰾴 Swap" # nf-md-file_swap
 format = "{bar} {used} / {total} ({percent})"
 
 
@@ -224,7 +224,7 @@ format = "{bar} {used} / {total} ({percent})"
 # {filesystem} -> The filesystem running on that mount.
 # {bar} -> A progress bar representing the total space available/taken.
 # {percent} -> The percentage of the disk used.
-title = "Disk ({mount})"
+title = "󰋊 Disk ({mount})" # nf-md-harddisk
 format = "{bar} {space_used} / {space_total} ({percent}) [{filesystem} @ {device}]"
 
 # A ignore list for any point points OR filesystems to ignore
@@ -237,13 +237,13 @@ ignore = []
 # Placeholders;
 # {host} -> The name of the host, either a motherboard name or a laptop model
 # {chassis} -> The chassis type, e.g Desktop or Laptop or whatever
-title = "Host"
+title = "󰇅 Host" # nf-md-desktop_tower
 format = "{host} ({chassis})"
 
 # Whether to output the chassis on it's own line to remain consistent with other fetch scripts.
 newline_chassis = false
 # The title/format of the chassis if we are outputting on it's own line
-chassis_title = "Chassis"
+chassis_title = "󰟀 Chassis" # nf-md-desktop_classic
 chassis_format = "{chassis}"
 
 
@@ -256,7 +256,7 @@ chassis_format = "{chassis}"
 # {width} -> The monitor's width
 # {height} -> The monitor's height
 # {refresh_rate} -> The monitor's refresh rate. This won't work in x11!
-title = "Display ({make} {model})"
+title = "󰍹 Display ({make} {model})" # nf-md-monitor
 format = "{width}x{height} @ {refresh_rate}Hz ({name})"
 
 # Whether to scale the width/height according to the screen's scale. Only availabe on Wayland.
@@ -268,12 +268,12 @@ scale_size = false
 # Placeholders;
 # {distro} -> The distro name
 # {kernel} -> The kernel version
-title = "Operating System"
+title = " Operating System" # nf-linux-fedora
 format = "{distro} ({kernel})"
 
 # Display the kernel version on a newline and if so, what format to use 
 newline_kernel = false
-kernel_title = "Kernel"
+kernel_title = " Kernel" # nf-cod-terminal_linux
 kernel_format = "Linux {kernel}"
 
 
@@ -281,7 +281,7 @@ kernel_format = "Linux {kernel}"
 # This format is for each entry, with all entries being combined into a single string separated by a comma. Placeholders;
 # {manager} -> The name of the manager
 # {count} -> The amount of packages that manager reports
-title = "Packages"
+title = "󰏗 Packages" # nf-md-package_variant_closed
 format = "{count} ({manager})"
 
 # List of package managers to ignore, for whatever reason you choose to
@@ -292,7 +292,7 @@ ignore = []
 # Placeholders;
 # {desktop} -> The name of the desktop
 # {display_type} -> The type of display server, aka x11 or wayland.
-title = "Desktop"
+title = " Desktop" # nf-linux-kde (also try nf-md-monitor_dashboard)
 format = "{desktop} ({display_type})"
 
 
@@ -301,7 +301,7 @@ format = "{desktop} ({display_type})"
 # {name} -> The name of the terminal, e.g kitty
 # {path} -> The path of the terminal, e.g /usr/bin/kitty
 # {version} -> The version of the terminal
-title = "Terminal"
+title = " Terminal" # nf-fa-terminal
 format = "{name} {version}"
 
 
@@ -310,7 +310,7 @@ format = "{name} {version}"
 # {name} -> The name of the shell, e.g zsh
 # {path} -> The path of the shell, e.g /usr/bin/zsh
 # {version} -> The version of the shell.
-title = "Shell"
+title = "󱆃 Shell" # nf-md-bash
 format = "{name} {version}"
 
 # Whether to show your default shell, instead of your current shell.
@@ -318,7 +318,7 @@ show_default_shell = false
 
 
 [uptime]
-title = "Uptime"
+title = " Uptime" # nf-fa-hourglass_half
 
 
 [editor]
@@ -326,7 +326,7 @@ title = "Uptime"
 # {name} -> The name of the editor
 # {path} -> The path the editor is at
 # {version} -> The version of the editor.
-title = "Editor"
+title = "󱩼 Editor" # nf-md-text_box_edit
 format = "{name} {version}"
 
 # Whether to turn the name into a "fancy" variant. E.g "nvim" gets turned into "NeoVim"
@@ -337,7 +337,7 @@ fancy = true
 # Placeholders;
 # {language} - The selected language
 # {encoding} - The encoding selected, most likely UTF-8
-title = "Locale"
+title = " Locale" # nf-fa-language
 format = "{language} ({encoding})"
 
 
@@ -346,7 +346,7 @@ format = "{language} ({encoding})"
 # {gtk2} -> The current GTK2 theme
 # {gtk3} -> The current GTK3 theme
 # {gtk4} -> The current GTK4 theme
-title = "Theme"
+title = "󰏘 Theme" # nf-md-palette
 format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 
 
@@ -355,7 +355,7 @@ format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 # {gtk2} -> The current GTK2 icons
 # {gtk3} -> The current GTK3 icons
 # {gtk4} -> The current GTK4 icons
-title = "Icons"
+title = " Icons" # nf-fa-icons
 format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 
 
@@ -368,7 +368,7 @@ format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 # {track_artists} - The names of all track artists
 # {album_artists} - The names of all album artists
 # {status} - The status of the player, AKA if it's playing or not.
-title = "Player ({player})"
+title = " Player ({player})" # nf-fa-music
 format = "{track} by {track_artists} ({album}) [{status}]"
 
 # Any music players to ignore
@@ -382,7 +382,7 @@ ignore = []
 # {index} -> The batterys index
 # {percentage} -> The battery percentage
 # {bar} -> A progeress bar representing how full the battery is
-title = "Battery {index}"
+title = "󱊦 Battery {index}" # nf-md-battery_charging_high
 format = "{percentage}%"
 
 
@@ -391,16 +391,16 @@ format = "{percentage}%"
 # {name} -> The name of the init system
 # {path} -> The path to the init system binary
 # {version} -> The version of the init system
-title = "Init System"
+title = " Init System" # nf-fa-list_check
 format = "{name} {version}"
 
 
 [processes]
-title = "Total Processes"
+title = " Total Processes" # nf-cod-server_process
 
 
 [datetime]
-title = "Date Time"
+title = "󰃰 Date Time" # nf-md-calendar_clock
 # Available placeholders; https://docs.rs/chrono/latest/chrono/format/strftime/index.html#specifiers
 # CrabFetch wiki page coming soon for it instead (tm)
 format = "%H:%M:%S on %e %B %G"
@@ -410,7 +410,7 @@ format = "%H:%M:%S on %e %B %G"
 # Placeholders;
 # {interface} -> The name of the interface, along with if it's IPV4 or IPV6
 # {addr} -> The IP address
-title = "Local IP ({interface})"
+title = "󰩠 Local IP ({interface})" # nf-md-ip_network
 format = "{addr}"
 
 
