@@ -35,7 +35,7 @@
 #
 # Match every kind with:
 # ```text
-# (?:([a-zA-Z\-]+)\sv([0-9\.]+):)|(?:([a-zA-Z\-]+)\sv([0-9\.]+) \(([a-zA-Z/\-]*)\):)|(?:([a-zA-Z\-]+)\sv([0-9\.]+) \((https://github\.com/[0-9=\?#a-zA-Z/\-]*)\):)
+# (?:([a-zA-Z\-]+)\sv([0-9a-zA-Z\-\.]+):)|(?:([a-zA-Z\-]+)\sv([0-9\.]+) \(([a-zA-Z/\-]*)\):)|(?:([a-zA-Z\-]+)\sv([0-9\.]+) \((https://github\.com/[0-9=\?#a-zA-Z/\-]*)\):)
 # ```
 # Where:
 #   Group 1: crates.io crate name
@@ -49,7 +49,7 @@
 #
 # Match crates.io with:
 # ```text
-# (?:([a-zA-Z\-]+)\sv([0-9\.]+):)
+# (?:([a-zA-Z\-]+)\sv([0-9a-zA-Z\-\.]+):)
 # ```
 # Where:
 #   Group 1: crate name
@@ -82,7 +82,7 @@ must_be_before="$(date -d "${minimum_release_age}" +%s)"
 installed_crates="$(cargo install --list)"
 
 crates_from_registry="$(echo "${installed_crates}" |
-    rg "(?:([a-zA-Z\-]+)\sv([0-9\.]+):)" -r '$1 $2')"
+    rg "(?:([a-zA-Z\-]+)\sv([0-9a-zA-Z\-\.]+):)" -r '$1 $2')"
 
 mapfile -t crates_from_registry <<<"${crates_from_registry}"
 for crate_ver_pair in "${crates_from_registry[@]}"; do
