@@ -59,7 +59,7 @@ title_bold = true
 title_italic = false
 
 # The default decimal places to provide in a module
-decimal_places = 2
+decimal_places = 3
 
 # Whether to have all module values as inline, e.g; https://i.imgur.com/UNyq2zj.png
 # To add padding use the "separator" and add some spaces
