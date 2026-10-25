@@ -200,7 +200,7 @@ format = "{vendor} {model} ({vram})"
 # {bar} -> A progress bar representing the total space available/taken.
 # {percent} -> Percentage of memory used
 title = "Memory"
-format = "{used} / {max} ({percent})"
+format = "{bar} {used} / {max} ({percent})"
 
 
 [swap]
