@@ -206,7 +206,7 @@ format = "{bar} {used} / {max} ({percent})"
 [swap]
 # Placeholders;
 # {used} -> The currently used swap.
-# {max} -> The maximum total swap.
+# {total} -> The maximum total swap.
 # {bar} -> A progress bar representing the total space available/taken.
 # {percent} -> Percentage of swap used
 title = "Swap"
