@@ -28,6 +28,7 @@ modules = [
     "uptime",
     "locale",
     "theme",
+    "icontheme",
     "player",
     "initsys",
     "processes",
