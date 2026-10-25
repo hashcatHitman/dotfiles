@@ -347,7 +347,7 @@ format = "{language} ({encoding})"
 # {gtk3} -> The current GTK3 theme
 # {gtk4} -> The current GTK4 theme
 title = "Theme"
-format = "Gtk3: {gtk3}  Gtk4: {gtk4}"
+format = "Gtk2: {gtk2}  Gtk3: {gtk3}  Gtk4: {gtk4}"
 
 
 [icontheme]
