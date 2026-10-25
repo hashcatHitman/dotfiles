@@ -63,7 +63,7 @@ decimal_places = 3
 
 # Whether to have all module values as inline, e.g; https://i.imgur.com/UNyq2zj.png
 # To add padding use the "separator" and add some spaces
-inline_values = false
+inline_values = true
 
 # The character to use in the underline module
 underline_character = '―'
