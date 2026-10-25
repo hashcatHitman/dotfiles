@@ -48,7 +48,7 @@ unknown_as_text = false
 allow_commands = false
 
 # The default separator between a modules title and it's value
-separator = " > "
+separator = " ❱ " # HEAVY RIGHT-POINTING ANGLE BRACKET ORNAMENT
 # The default color of a modules title
 # Can be; black, red, green, yellow, blue, magenta, cyan, white
 # All of these can be prefixed with "bright_" to be lighter versions, e.g bright_red
