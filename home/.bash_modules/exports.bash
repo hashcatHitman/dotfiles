@@ -14,6 +14,9 @@ export PATH
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 
+# Set my preferred editor to Helix
+export EDITOR="${HOME}/.cargo/bin/hx"
+
 # Place pycache files in home cache directory
 export PYTHONPYCACHEPREFIX="${HOME}/.cache/__pycache__"
 
