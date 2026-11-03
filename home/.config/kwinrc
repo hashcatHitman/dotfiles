@@ -5,3 +5,7 @@ BorderActivate=9
 Active=true
 Mode=Constant
 NightTemperature=2500
+
+[org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
