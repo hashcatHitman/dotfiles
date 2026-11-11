@@ -4,6 +4,37 @@
 
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", "customManagers:githubActionsVersions"],
-  "prHourlyLimit": 0
+  "extends": [
+    "config:best-practices",
+    "customManagers:githubActionsVersions",
+    "mergeConfidence:all-badges",
+    ":rebaseStalePrs",
+    ":enableVulnerabilityAlerts"
+  ],
+  "prHourlyLimit": 0,
+  "commitBodyTable": true,
+  "commitMessageAction": "Bump",
+  "commitMessageLowerCase": "never",
+  "commitMessageTopic": "`{{depName}}`",
+  "minimumReleaseAge": "14 days",
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      // Something is forcing the top-level to not apply to GHA, but this works.
+      "commitMessageTopic": "`{{depName}}`"
+    },
+    {
+      "matchDepTypes": ["devDependencies", "dev-dependencies", "dev"],
+      "semanticCommitScope": "deps-dev"
+    },
+    {
+      "matchFileNames": [".github/**"],
+      "semanticCommitType": "ops"
+    },
+    {
+      "matchFileNames": ["package.json", "package-lock.json"],
+      "matchDepNames": ["prettier"],
+      "semanticCommitType": "ops"
+    }
+  ]
 }
